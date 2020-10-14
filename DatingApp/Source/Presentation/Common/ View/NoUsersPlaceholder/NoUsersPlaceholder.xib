@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ph_browse" translatesAutoresizingMaskIntoConstraints="NO" id="Tty-g1-jON">
+                    <rect key="frame" x="140" y="390" width="135" height="116"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="135" id="oVF-3V-4nW"/>
+                        <constraint firstAttribute="height" constant="116" id="z1H-IZ-s1F"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looking for people..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fX-8i-8PL">
+                    <rect key="frame" x="8" y="514" width="398" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5fX-8i-8PL" secondAttribute="trailing" constant="8" id="CIb-fG-78e"/>
+                <constraint firstItem="5fX-8i-8PL" firstAttribute="top" secondItem="Tty-g1-jON" secondAttribute="bottom" constant="8" id="Dw3-tc-dBc"/>
+                <constraint firstAttribute="centerX" secondItem="Tty-g1-jON" secondAttribute="centerX" constant="-0.5" id="ZPN-xA-tT6"/>
+                <constraint firstItem="5fX-8i-8PL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="eGN-kR-wtB"/>
+                <constraint firstAttribute="centerY" secondItem="Tty-g1-jON" secondAttribute="centerY" id="jfi-r5-exH"/>
+            </constraints>
+            <point key="canvasLocation" x="145" y="190"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ph_browse" width="135" height="116"/>
+    </resources>
+</document>

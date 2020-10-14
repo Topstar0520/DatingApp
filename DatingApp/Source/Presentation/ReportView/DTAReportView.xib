@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Y35-VO-LVK" customClass="DTAReportView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DQ-dD-Wrp">
+                    <rect key="frame" x="228" y="21" width="144" height="32"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                    <color key="textColor" red="0.13333000240000001" green="0.26274999980000002" blue="0.56862998009999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxk-FF-py5">
+                    <rect key="frame" x="201" y="74" width="199" height="36"/>
+                    <string key="text">Is this person bothering you?
+ Tell us what they did.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRz-CT-T0g" userLabel="ViewSeparator">
+                    <rect key="frame" x="20" y="164" width="560" height="1"/>
+                    <color key="backgroundColor" red="0.81176000829999995" green="0.82353001830000006" blue="0.82744997740000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Ism-Ub-r4I"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7u-0Y-qc7">
+                    <rect key="frame" x="562" y="143" width="18" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="IaD-Qe-B6N"/>
+                        <constraint firstAttribute="height" constant="20" id="Swe-xs-b5I"/>
+                    </constraints>
+                    <state key="normal" image="ico_clip"/>
+                    <connections>
+                        <action selector="actionPressAddImg:" destination="Y35-VO-LVK" eventType="touchUpInside" id="Nv3-ii-HdT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpo-By-BKU">
+                    <rect key="frame" x="25" y="485" width="550" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="uMk-pR-wxb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Report">
+                        <color key="titleColor" red="1" green="0.28626999260000002" blue="0.2039200068" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressReport:" destination="Y35-VO-LVK" eventType="touchUpInside" id="8DW-5R-dl8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25b-2e-oha">
+                    <rect key="frame" x="25" y="540" width="550" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Fob-Qq-oSw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPressCancel:" destination="Y35-VO-LVK" eventType="touchUpInside" id="wES-f9-n7O"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Additional Info" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p5T-2v-ZvJ">
+                    <rect key="frame" x="20" y="138" width="515" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="NKs-Ao-kZl"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="h7u-0Y-qc7" firstAttribute="top" secondItem="Y35-VO-LVK" secondAttribute="top" constant="43" id="6Kd-ci-2fH"/>
+                <constraint firstItem="nxk-FF-py5" firstAttribute="centerX" secondItem="Y35-VO-LVK" secondAttribute="centerX" id="6zf-UX-qBu"/>
+                <constraint firstAttribute="trailing" secondItem="Fpo-By-BKU" secondAttribute="trailing" constant="25" id="7sH-si-LIC"/>
+                <constraint firstAttribute="trailing" secondItem="p5T-2v-ZvJ" secondAttribute="trailing" constant="20" id="DfY-Ru-XZC"/>
+                <constraint firstItem="h7u-0Y-qc7" firstAttribute="top" secondItem="nxk-FF-py5" secondAttribute="bottom" constant="43" id="EPj-El-qQ4"/>
+                <constraint firstItem="nxk-FF-py5" firstAttribute="top" secondItem="4DQ-dD-Wrp" secondAttribute="bottom" constant="21" id="Mgu-fB-t04"/>
+                <constraint firstItem="4DQ-dD-Wrp" firstAttribute="centerX" secondItem="Y35-VO-LVK" secondAttribute="centerX" id="NDs-h1-1Vb"/>
+                <constraint firstAttribute="trailing" secondItem="ZRz-CT-T0g" secondAttribute="trailing" constant="20" id="OeB-PJ-SEa"/>
+                <constraint firstItem="h7u-0Y-qc7" firstAttribute="leading" secondItem="p5T-2v-ZvJ" secondAttribute="trailing" constant="20" id="OfK-K9-SZf"/>
+                <constraint firstItem="4DQ-dD-Wrp" firstAttribute="top" secondItem="Y35-VO-LVK" secondAttribute="top" constant="21" id="U2c-Qt-mhX"/>
+                <constraint firstAttribute="bottom" secondItem="25b-2e-oha" secondAttribute="bottom" constant="15" id="XxL-fM-fTW"/>
+                <constraint firstItem="p5T-2v-ZvJ" firstAttribute="leading" secondItem="Y35-VO-LVK" secondAttribute="leading" constant="20" id="ZK8-ud-vj6"/>
+                <constraint firstAttribute="trailing" secondItem="25b-2e-oha" secondAttribute="trailing" constant="25" id="aQV-W5-vNr"/>
+                <constraint firstItem="h7u-0Y-qc7" firstAttribute="leading" secondItem="p5T-2v-ZvJ" secondAttribute="trailing" constant="15" id="aqY-6d-l0W"/>
+                <constraint firstItem="Fpo-By-BKU" firstAttribute="leading" secondItem="Y35-VO-LVK" secondAttribute="leading" constant="25" id="gTr-kr-SYf"/>
+                <constraint firstAttribute="trailing" secondItem="h7u-0Y-qc7" secondAttribute="trailing" constant="20" id="i4Q-mM-vhX"/>
+                <constraint firstItem="25b-2e-oha" firstAttribute="top" secondItem="Fpo-By-BKU" secondAttribute="bottom" constant="10" id="lsU-qg-X2A"/>
+                <constraint firstItem="ZRz-CT-T0g" firstAttribute="top" secondItem="p5T-2v-ZvJ" secondAttribute="bottom" constant="1" id="p8B-c1-ZRG"/>
+                <constraint firstItem="25b-2e-oha" firstAttribute="leading" secondItem="Y35-VO-LVK" secondAttribute="leading" constant="25" id="q2d-us-IET"/>
+                <constraint firstItem="p5T-2v-ZvJ" firstAttribute="top" secondItem="nxk-FF-py5" secondAttribute="bottom" constant="28" id="qvs-mU-bq0"/>
+                <constraint firstItem="h7u-0Y-qc7" firstAttribute="top" secondItem="p5T-2v-ZvJ" secondAttribute="bottom" id="r4e-xW-fSA"/>
+                <constraint firstItem="h7u-0Y-qc7" firstAttribute="bottom" secondItem="p5T-2v-ZvJ" secondAttribute="bottom" id="reE-nk-zTz"/>
+                <constraint firstItem="Fpo-By-BKU" firstAttribute="top" secondItem="ZRz-CT-T0g" secondAttribute="bottom" constant="25" id="tvP-I7-bac"/>
+                <constraint firstItem="ZRz-CT-T0g" firstAttribute="leading" secondItem="Y35-VO-LVK" secondAttribute="leading" constant="20" id="y3n-01-Re7"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="DfY-Ru-XZC"/>
+                    <exclude reference="tvP-I7-bac"/>
+                    <exclude reference="6Kd-ci-2fH"/>
+                    <exclude reference="EPj-El-qQ4"/>
+                    <exclude reference="OfK-K9-SZf"/>
+                    <exclude reference="r4e-xW-fSA"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="buttonCancel" destination="25b-2e-oha" id="MJ9-OL-SUk"/>
+                <outlet property="buttonReport" destination="Fpo-By-BKU" id="kDo-xt-93Y"/>
+                <outlet property="textField" destination="p5T-2v-ZvJ" id="KzK-Fc-0nP"/>
+            </connections>
+            <point key="canvasLocation" x="518" y="235"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_clip" width="18" height="20"/>
+    </resources>
+</document>

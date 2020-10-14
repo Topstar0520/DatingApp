@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  WOWTTO
+//
+//  Created by VLADISLAV KIRIN on 5/19/15.
+//  Copyright (c) 2015 Cleveroad Inc. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//#import <RestKit/CoreData.h>
+#import "RestKit.h"
+#import <CoreData/CoreData.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "SAMHUDView.h"
+#import "DTAConstants.h"
+#import "DTAObjectManager.h"
+#import "AppDelegate.h"
+#import "NSUserDefaults+Subscripting.h"
+#import "DTAAPI.h"
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+#endif
+
+

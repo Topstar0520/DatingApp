@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>626536059077-j1urft3900gi4gle1gelcokm39t262ih.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.626536059077-j1urft3900gi4gle1gelcokm39t262ih</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBLUvRFWtRPabMOD-BrPXwoZOqX_7ymWMk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>626536059077</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kipl.datingapp</string>
+	<key>PROJECT_ID</key>
+	<string>dating-app-e0fef</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dating-app-e0fef.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:626536059077:ios:230a05a913ad2893</string>
+	<key>DATABASE_URL</key>
+	<string>https://dating-app-e0fef.firebaseio.com</string>
+</dict>
+</plist>

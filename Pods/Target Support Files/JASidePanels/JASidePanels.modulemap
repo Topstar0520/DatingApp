@@ -1,0 +1,6 @@
+framework module JASidePanels {
+  umbrella header "JASidePanels-umbrella.h"
+
+  export *
+  module * { export * }
+}

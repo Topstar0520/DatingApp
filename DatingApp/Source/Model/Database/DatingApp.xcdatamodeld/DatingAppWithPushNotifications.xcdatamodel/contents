@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Country" representedClassName="Country" syncable="YES">
+        <attribute name="countryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchOptions" inverseName="country" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="country" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Education" representedClassName="Education" syncable="YES">
+        <attribute name="educationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="educationTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchOptions" inverseName="education" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="education" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Ethnic" representedClassName="Ethnic" syncable="YES">
+        <attribute name="ethnicId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ethnicTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchOptions" inverseName="ethnic" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="ethnic" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Goals" representedClassName="Goals" syncable="YES">
+        <attribute name="goalId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="goalTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchOptions" inverseName="goals" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="goals" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="HaveKids" representedClassName="HaveKids" syncable="YES">
+        <attribute name="haveKidsId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="haveKidsTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="SearchOptions" inverseName="haveKids" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User" inverseName="haveKids" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName="Image" syncable="YES">
+        <attribute name="imageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="isAvatar" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="image" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="locationTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchOptions" inverseName="location" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="location" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Orientation" representedClassName="Orientation" syncable="YES">
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="orientationId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orientationTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="SearchOptions" inverseName="orientation" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User" inverseName="orientation" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Profession" representedClassName="Profession" syncable="YES">
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="professionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="professionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchOptions" inverseName="profession" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="profession" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Relationship" representedClassName="Relationship" syncable="YES">
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="relationshipId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relationshipTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchOptions" inverseName="relationship" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="relationship" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Religion" representedClassName="Religion" syncable="YES">
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="religionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="religionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SearchOptions" inverseName="religion" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="religion" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="SearchOptions" representedClassName="SearchOptions" syncable="YES">
+        <attribute name="ageFrom" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ageTo" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="heightFrom" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="heightTo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="interestedIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nearbyRadius" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="searchOptions" inverseEntity="Country" syncable="YES"/>
+        <relationship name="education" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Education" inverseName="searchOptions" inverseEntity="Education" syncable="YES"/>
+        <relationship name="ethnic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ethnic" inverseName="searchOptions" inverseEntity="Ethnic" syncable="YES"/>
+        <relationship name="goals" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goals" inverseName="searchOptions" inverseEntity="Goals" syncable="YES"/>
+        <relationship name="haveKids" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HaveKids" inverseName="searchOptions" inverseEntity="HaveKids" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="searchOptions" inverseEntity="Location" syncable="YES"/>
+        <relationship name="orientation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Orientation" inverseName="searchOptions" inverseEntity="Orientation" syncable="YES"/>
+        <relationship name="profession" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Profession" inverseName="searchOptions" inverseEntity="Profession" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Relationship" inverseName="searchOptions" inverseEntity="Relationship" syncable="YES"/>
+        <relationship name="religion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Religion" inverseName="searchOptions" inverseEntity="Religion" syncable="YES"/>
+        <relationship name="wantKids" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WantKids" inverseName="searchOptions" inverseEntity="WantKids" syncable="YES"/>
+    </entity>
+    <entity name="Session" representedClassName="Session" syncable="YES">
+        <attribute name="accessToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiresAtDateString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="refreshToken" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="session" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bringJoy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dreamParents" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiresTokenAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="facebookToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteJoll" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteThings" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="heightUnit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="heightValue" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="interestedIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFull" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="likesBadge" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="likesNotifications" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="matchesBadge" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="matchesNotifications" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="messagesBadge" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="messagesNotifications" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="refreshToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stringDateOfBirth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" attributeType="String" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="user" inverseEntity="Country" syncable="YES"/>
+        <relationship name="education" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Education" inverseName="user" inverseEntity="Education" syncable="YES"/>
+        <relationship name="ethnic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ethnic" inverseName="user" inverseEntity="Ethnic" syncable="YES"/>
+        <relationship name="goals" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goals" inverseName="user" inverseEntity="Goals" syncable="YES"/>
+        <relationship name="haveKids" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HaveKids" inverseName="user" inverseEntity="HaveKids" syncable="YES"/>
+        <relationship name="image" optional="YES" toMany="YES" maxCount="6" deletionRule="Nullify" destinationEntity="Image" inverseName="user" inverseEntity="Image" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="user" inverseEntity="Location" syncable="YES"/>
+        <relationship name="orientation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Orientation" inverseName="user" inverseEntity="Orientation" syncable="YES"/>
+        <relationship name="profession" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Profession" inverseName="user" inverseEntity="Profession" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Relationship" inverseName="user" inverseEntity="Relationship" syncable="YES"/>
+        <relationship name="religion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Religion" inverseName="user" inverseEntity="Religion" syncable="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Session" inverseName="user" inverseEntity="Session" syncable="YES"/>
+        <relationship name="wantKids" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WantKids" inverseName="user" inverseEntity="WantKids" syncable="YES"/>
+    </entity>
+    <entity name="WantKids" representedClassName="WantKids" syncable="YES">
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="wantKidsId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wantKidsTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="searchOptions" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="SearchOptions" inverseName="wantKids" inverseEntity="SearchOptions" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User" inverseName="wantKids" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Country" positionX="-261" positionY="-595" width="128" height="118"/>
+        <element name="Education" positionX="-90" positionY="-370" width="128" height="118"/>
+        <element name="Ethnic" positionX="-675" positionY="-550" width="128" height="118"/>
+        <element name="Goals" positionX="-702" positionY="-441" width="128" height="118"/>
+        <element name="HaveKids" positionX="-711" positionY="-450" width="128" height="118"/>
+        <element name="Image" positionX="-846" positionY="-441" width="128" height="135"/>
+        <element name="Location" positionX="-153" positionY="-73" width="128" height="120"/>
+        <element name="Orientation" positionX="-702" positionY="-441" width="128" height="118"/>
+        <element name="Profession" positionX="-927" positionY="-289" width="128" height="118"/>
+        <element name="Relationship" positionX="-486" positionY="-114" width="128" height="118"/>
+        <element name="Religion" positionX="-909" positionY="-127" width="128" height="118"/>
+        <element name="SearchOptions" positionX="-470" positionY="191" width="128" height="313"/>
+        <element name="Session" positionX="-873" positionY="30" width="128" height="105"/>
+        <element name="User" positionX="-443" positionY="-612" width="128" height="628"/>
+        <element name="WantKids" positionX="-720" positionY="-459" width="128" height="118"/>
+    </elements>
+</model>
