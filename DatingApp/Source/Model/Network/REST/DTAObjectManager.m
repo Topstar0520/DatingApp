@@ -68,6 +68,8 @@
     managedObjectStore.managedObjectCache = [RKFetchRequestManagedObjectCache new];
     
     // Initialize MR
+    [NSManagedObjectContext MR_setDefaultContext:nil];
+    [NSManagedObjectContext MR_setRootSavingContext:nil];
     
     // Setup Magical Record with managed object model
     [NSManagedObjectModel MR_setDefaultManagedObjectModel:managedObjectStore.managedObjectModel];
@@ -77,8 +79,10 @@
     
     
     // Setup Magical Record with managed object contexts
-    [NSManagedObjectContext MR_setDefaultContext:managedObjectStore.mainQueueManagedObjectContext];
+     
     [NSManagedObjectContext MR_setRootSavingContext:managedObjectStore.persistentStoreManagedObjectContext];
+    [NSManagedObjectContext MR_setDefaultContext:managedObjectStore.mainQueueManagedObjectContext];
+    
     
     [self setupUserRoutes];
     [self setupUserMapping];
