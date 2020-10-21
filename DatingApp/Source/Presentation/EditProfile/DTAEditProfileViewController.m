@@ -172,12 +172,13 @@ static NSString *const kMeasumentInches = @"inch";
     SEL selector = NSSelectorFromString(@"setHighlightsToday:");
     NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDatePicker instanceMethodSignatureForSelector:selector]];
     BOOL no = NO;
-    [invocation setSelector:selector];
-    [invocation setArgument:&no atIndex:2];
-    [invocation invokeWithTarget:self.datePicker];
+    //[invocation setSelector:selector];
+    //[invocation setArgument:&no atIndex:2];
+    //[invocation invokeWithTarget:self.datePicker];
     
     [self fetchAllTheResources];
 }
+ 
 
 - (void) fetchAllTheResources {
     
